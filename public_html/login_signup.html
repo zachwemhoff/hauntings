@@ -49,24 +49,46 @@
           	</li>
         </ul>
 
-		    <a class="btn btn-secondary" href="login.html">Login</a>
-        &nbsp;<a class="btn btn-primary" href="signup.html">Sign-Up</a>
+		    <a class="btn btn-primary" href="login_signup.html">Login</a>
+        &nbsp;<a class="btn btn-secondary" href="login_signup.html">Sign-Up</a>
       </div>
     </nav>
 
+    <!-- combined login and sign-up on the same page using column 12 -->
+    <div class= "row">
+      <div class="mycolor col-6">
+      <h1>Login</h1>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="exampleInputEmail1" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck4">
+          <label class="form-check-label" for="exampleCheck4">Remember password</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <br>
+    </div>
+  
     <!-- Main content -->
-    <div class="container col-md-4 col-8" style="margin-top: 5%;">
+      <div class="mycolor col-6">
       <h1>Sign-Up</h1>
       <form>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
 
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
         </div>
 
         <div class="form-group">
@@ -75,8 +97,8 @@
         </div>
 
         <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Sign-up for our newsletter.</label>
+          <input type="checkbox" class="check" id="check">
+          <label class="check" for="check">Sign-up for our newsletter.</label>
         </div>
 
         <div class="form-group form-check">
@@ -88,6 +110,7 @@
       </form>
       <br>
     </div>
+  </div>
 
     <footer class="container col-4">
       <p>&copy; Simpson Ghost Hunters 2017-2021</p>
@@ -108,6 +131,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+        </div>
           <div class="modal-body">
             <h1>Terms and Conditions ("Terms")</h1>
 
@@ -176,6 +200,5 @@
           </div>
         </div>
       </div>
-    </div>
-  </body>
+</body>
 </html>
